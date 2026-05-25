@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  display: block;
+  width: 450px;
+  height: 300px;
+}
+
+ul {
+  list-style-type: none;
+  margin-block: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration-line: none;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.site-header {
+  padding-block: 20px;
+  background: linear-gradient(90deg, #0400ff, #00ff88);
+  background: linear-gradient(90deg, #0400ff, #00ff88, #0400ff);
+  background-size: 200% 200%;
+  animation: gradientFlow 5s ease infinite; /* 5 soniyada suzib o'tadi */
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  font-size: 45px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -1.5px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: linear-gradient(to right, #fff, #ffd700, #fff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 3s linear infinite;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link:hover {
+  transform: scale(1.1) translateY(-2px);
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+  letter-spacing: 1px;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar-item {
+}
+
+.navbar-link {
+  font-size: 24px;
+  padding: 8px 10px;
+  border-radius: 15px;
+  color: #000;
+}
+
+.active {
+  background: linear-gradient(90deg, #00ceff, #fc00ff, #00ceff);
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(252, 0, 255, 0.3);
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* main boshlandi  */
+
+.site-main {
+}
+
+.aboutme {
+}
+
+.aboutme-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 80px;
+}
+
+.aboutme-text-wrapper {
+  width: 500px;
+}
+
+.aboutme-title {
+  font-size: 55px;
+  font-weight: 800;
+  margin-block: 0;
+}
+
+.aboutme-span {
+  color: gold;
+}
+
+.aboutme-desc {
+  color: gray;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.aboutme-link {
+  background-color: #00ceff;
+  padding: 20px;
+  color: #fff;
+  border-radius: 15px;
+  transition: 0.3s linear;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.aboutme-link:hover {
+  background: linear-gradient(90deg, #0400ff, #00ff88, #0400ff);
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(252, 0, 255, 0.3);
+}
+
+.img-box {
+  position: relative;
+  width: 466px;
+  height: 466px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #eee;
+}
+
+.img-box::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  /* Faqat bitta nuqtada rang, qolgan joy shaffof */
+  background: conic-gradient(transparent, transparent, transparent, #0400ff);
+  animation: rotateBorder 3s linear infinite;
+}
+
+.img-box::after {
+  content: "";
+  position: absolute;
+  inset: 6px; /* Nur qalinligi */
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.aboutme-img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* more section boshlandi  */
+
+.more {
+  padding-block: 100px;
+  background: linear-gradient(348deg, #d5b076, #158dec);
+}
+
+.more-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-img {
+  width: 500px;
+}
+
+.more-texts-wrapper {
+  width: 500px;
+}
+
+.more-title {
+  font-size: 33px;
+  line-height: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.more-link {
+  background-color: #00ceff;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 15px;
+  transition: 0.3s linear;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.more-link:hover {
+  background: linear-gradient(90deg, #0400ff, #00ff88, #0400ff);
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(252, 0, 255, 0.3);
+}
+
+/* more section tugadi    */
+
+/* data section boshlandi  */
+
+.data {
+  padding-block: 100px;
+}
+
+.data-title {
+  text-align: center;
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+
+.data-form-box {
+  display: flex;
+}
+
+.data-form input,
+textarea {
+  width: 500px;
+}
+
+label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.data-form input,
+textarea {
+  margin-bottom: 15px;
+  padding-block: 10px;
+  border-radius: 7px;
+  padding-left: 15px;
+  border: 2px solid gray;
+}
+
+.data-form button {
+  background-color: #00ceff;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 15px;
+  transition: 0.3s linear;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  width: 500px;
+}
+
+.data-form button:hover {
+  background: linear-gradient(90deg, #0400ff, #00ff88, #0400ff);
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(252, 0, 255, 0.3);
+}
+
+.data-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* data section tugadi  */
+/* footer boshlandi  */
+
+.site-footer {
+  padding-block: 50px;
+  background: linear-gradient(90deg, #0400ff, #00ff88);
+  background: linear-gradient(90deg, #0400ff, #00ff88, #0400ff);
+  background-size: 200% 200%;
+  animation: gradientFlow 5s ease infinite;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.fa-instagram,
+.fa-telegram,
+.fa-phone {
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+.fa-instagram:hover {
+  color: #00ceff;
+}
+
+.fa-telegram:hover {
+  color: #00ceff;
+}
+
+.fa-phone:hover {
+  color: #00ceff;
+}
+
+/* footer tugadi */
+
+/* main tugadi  */

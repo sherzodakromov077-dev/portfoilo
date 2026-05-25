@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a class="logo-link" href="./index.html"> Ibrohim </a>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a class="navbar-link active" href="./index.html">
+                  Men haqimda
+                </a>
+              </li>
+
+              <li class="navbar-item">
+                <a class="navbar-link" href="./family.html"> Oilam </a>
+              </li>
+
+              <li class="navbar-item">
+                <a class="navbar-link" href="./project.html"> Loyihalarim </a>
+              </li>
+
+              <li class="navbar-item">
+                <a class="navbar-link" href="./friends.html">
+                  Guruhdoshlarim
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="aboutme">
+        <div class="container">
+          <div class="aboutme-wrapper">
+            <div class="aboutme-text-wrapper">
+              <h1 class="aboutme-title">
+                Assalomu alaykum mening ismim
+                <span class="aboutme-span"> Ibrohim </span>
+              </h1>
+
+              <p class="aboutme-desc">
+                Men PDP Juniorning Bektemir tumani 3-oydan beri o'qiyman.
+              </p>
+
+              <a class="aboutme-link" href="#more">Ko'proq ma'lumot</a>
+            </div>
+
+            <div class="img-box">
+              <img
+                class="aboutme-img"
+                src="./images/photo_2026-01-21_18-13-53.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more" id="more">
+        <div class="container">
+          <div class="more-wrapper">
+            <img
+              class="more-img"
+              src="./images/photo_2026-01-21_18-13-53.jpg"
+              alt=""
+            />
+
+            <div class="more-texts-wrapper">
+              <h2 class="more-title">
+                Mening to'liq ismim Tishabaev Ibrohim Ismatila o'g'li. Men
+                289-maktabning 9-sinfida o'qiyman. IT dan tashqari, Ingliz tili
+                qiziqaman. Bundan tashqari futbolga ham qiziqaman. Yaxshi
+                ko'rgan futbol klubim real madrid
+              </h2>
+
+              <a class="more-link" href="#data"> pastga </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data" id="data">
+        <div class="container">
+          <h2 class="data-title">Men bilan bog'lanish</h2>
+
+          <div class="data-box">
+            <form class="data-form" action="">
+              <label for="">Ism familya </label>
+              <br />
+              <input type="text" />
+              <br />
+              <label for="">Telefon raqami</label>
+              <br />
+              <input type="tel" />
+              <br />
+              <label for="">Xabar</label>
+              <br />
+              <textarea name="" id="" rows="5"></textarea>
+              <br />
+              <button>Yuborish</button>
+            </form>
+
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.uz/maps/org/197913283981/?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+                >Pdp University</a
+              ><a
+                href="https://yandex.uz/maps/10335/tashkent/category/university/184106140/?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+                >OO‘Yu Toshkentda</a
+              ><iframe
+                src="https://yandex.uz/map-widget/v1/?ll=69.216384%2C41.229168&mode=search&oid=197913283981&ol=biz&z=14.9"
+                width="560"
+                height="400"
+                frameborder="1"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <a class="logo-link" href="./index.html"> Ibrohim </a>
+
+          <div class="social-box">
+            <a href="">
+              <i class="fa-brands fa-instagram fa-3x"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-telegram fa-3x"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-solid fa-phone fa-3x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

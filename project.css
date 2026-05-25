@@ -1,0 +1,30 @@
+.projects-hero {
+    padding-block: 100px;
+}
+
+.project-title {
+    font-size: 55px;
+    text-align: center;
+    margin-block: 100px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 55px;
+}
+
+.project-item {
+
+}
+
+.project-img {
+
+}
+
+.project-desc {
+    font-size: 22px;
+    font-weight: 700;
+}
