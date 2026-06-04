@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -66,7 +67,7 @@
             <div class="img-box">
               <img
                 class="aboutme-img"
-                src="./images/"
+                src="./images/image copy.png"
                 alt=""
               />
             </div>
@@ -76,14 +77,17 @@
 
       <section class="more" id="more">
         <div class="container">
-          <div class="more-wrapper">
-            <img
-              class="more-img"
-              src="./images/"
-              alt=""
-            />
 
+          <div class="more-wrapper">
+            <div data-aos="fade-up-right">
+           <img    
+              class="more-img"
+              src="./images/image copy.png"
+              alt=""
+             />
+            </div>
             <div class="more-texts-wrapper">
+            <div data-aos="fade-up-left">
               <h2 class="more-title">
                 Mening to'liq ismim Tishabaev Ibrohim Ismatila o'g'li. Men
                 289-maktabning 9-sinfida o'qiyman. IT dan tashqari, Ingliz tili
@@ -91,7 +95,8 @@
                 ko'rgan futbol klubim real madrid
               </h2>
 
-              <a class="more-link" href="#data"> pastga </a>
+              <a class="more-link" href="#data">  bog'lanish</a>
+           </div>
             </div>
           </div>
         </div>
@@ -99,9 +104,10 @@
 
       <section class="data" id="data">
         <div class="container">
-          <h2 class="data-title">Men bilan bog'lanish</h2>
-
+       
+        <h2 class="data-title">Men bilan bog'lanish</h2>
           <div class="data-box">
+              <div data-aos="fade-down-right">
             <form class="data-form" action="">
               <label for="">Ism familya </label>
               <br />
@@ -116,11 +122,14 @@
               <textarea name="" id="" rows="5"></textarea>
               <br />
               <button>Yuborish</button>
+              </div>
             </form>
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/search/Junior%20pdp%20bektemir/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Junior pdp bektemir в Ташкенте</a><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ташкент</a><iframe src="https://yandex.uz/map-widget/v1/?ll=69.262723%2C41.274298&mode=search&sll=-86.368581%2C12.194471&sspn=0.037435%2C0.022400&text=Junior%20pdp%20bektermir&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=11.99" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            <div data-aos="fade-down-left">
+ <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/search/Junior%20pdp%20bektemir/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Junior pdp bektemir в Ташкенте</a><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ташкент</a><iframe src="https://yandex.uz/map-widget/v1/?ll=69.262723%2C41.274298&mode=search&sll=-86.368581%2C12.194471&sspn=0.037435%2C0.022400&text=Junior%20pdp%20bektermir&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=11.99" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
             </div>
+           
           </div>
-        </div>
+          </div>
       </section>
     </main>
 
@@ -138,12 +147,16 @@
               <i class="fa-brands fa-telegram fa-3x"></i>
             </a>
 
-            <a href="">
+            <a href="#998935373675">
               <i class="fa-solid fa-phone fa-3x"></i>
             </a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

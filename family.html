@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./family.css" />
   </head>
@@ -53,51 +54,63 @@
           <ul class="family-list">
             <li class="family-item">
               <div class="family-box">
-                <h3 class="family-name">Bu mening Dadam</h3>
+                <div data-aos="fade-up-right">
+                  <h3 class="family-name">Bu mening Dadam</h3>
 
-                <p class="family-desc">
-                  Mengi Dadam 1961-yil mart-7 kunida tug'ilgan hozirgi ishlarni M.H.H
-                </p>
+                  <p class="family-desc">
+                    Mengi Dadam 1961-yil mart-7 kunida tug'ilgan hozirgi
+                    ishlarni M.H.H
+                  </p>
+                </div>
               </div>
 
-              <img
-                class="family-img" 
-                src="./images/photo_2026-01-21_18-13-53.jpg"
-                alt=""
-              />
+              <div data-aos="flip-right">
+                <img
+                  class="family-img"
+                  src="./images/photo_2026-06-03_20-04-48.jpg"
+                  alt=""
+                />
+              </div>
             </li>
 
             <li class="family-item">
               <div class="family-box">
-                <h3 class="family-name">Bu mening Onam</h3>
+                <div data-aos="fade-down-left">
+                  <h3 class="family-name">Bu mening Onam</h3>
 
-                <p class="family-desc">
-                  Mengi Onam 1975-yil Avgust-12 kunida tug'ilgan hozirgi
-                  ishlarni Safiya 
-                </p>
+                  <p class="family-desc">
+                    Mengi Onam 1975-yil Avgust-12 kunida tug'ilgan hozirgi
+                    ishlarni Safiya
+                  </p>
+                </div>
               </div>
-
-              <img
-                class="family-img"
-                src="./images/photo_2026-01-21_18-13-53.jpg"
-                alt=""
-              />
+              <div data-aos="flip-left">
+                <img
+                  class="family-img"
+                  src="./images/photo_2026-06-03_20-04-34.jpg"
+                  alt=""
+                />
+              </div>
             </li>
 
             <li class="family-item">
               <div class="family-box">
-                <h3 class="family-name">Bu mening Akam</h3>
+                <div data-aos="fade-up-right">
+                  <h3 class="family-name">Bu mening Akam</h3>
 
-                <p class="family-desc">
-                   Mengi Akam 1994-yil sentaber-1 kunda tug'ilgan hozirgi ishlarni Karzinka
-                </p>
+                  <p class="family-desc">
+                    Mengi Akam 1994-yil sentaber-1 kunda tug'ilgan hozirgi
+                    ishlarni Karzinka
+                  </p>
+                </div>
               </div>
-
-              <img
-                class="family-img"
-                src="./images/photo_2026-01-21_18-13-53.jpg"
-                alt=""
-              />
+              <div data-aos="flip-right">
+                <img
+                  class="family-img"
+                  src="./images/"
+                  alt=""
+                />
+              </div>
             </li>
           </ul>
         </div>
@@ -125,5 +138,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

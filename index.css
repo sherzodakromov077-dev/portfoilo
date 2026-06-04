@@ -50,7 +50,10 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
+.more-wrapper img{
+ width: 530px;
+ height: 550px;
+}
 .logo-link {
   font-size: 45px;
   font-weight: 900;
@@ -95,7 +98,7 @@ a {
 }
 
 .active {
-  background: linear-gradient(90deg, #00ceff, #fc00ff, #00ceff);
+  background: linear-gradient(90deg, #0400ff, #00ff88, #0400ff);
   background-size: 200% 200%;
   animation: gradientFlow 3s ease infinite;
   color: #fff !important;
