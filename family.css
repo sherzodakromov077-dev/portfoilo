@@ -1,7 +1,7 @@
 .family-hero {
 
 }
-
+ 
 .family-title {
     font-size: 55px;
     text-align: center;
@@ -30,6 +30,10 @@
 .family-img {
     width: 600px;
     height: 600px;
+    object-fit: cover;
+}
+.img-akam{
+    object-position: top;
 }
 
 .family-name {

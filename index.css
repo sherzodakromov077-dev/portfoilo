@@ -6,7 +6,11 @@
 html {
   scroll-behavior: smooth;
 }
-
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+} 
 body {
   margin: 0;
   overflow-x: hidden;
@@ -86,10 +90,6 @@ a {
   display: flex;
   gap: 35px;
 }
-
-.navbar-item {
-}
-
 .navbar-link {
   font-size: 24px;
   padding: 8px 10px;
@@ -205,6 +205,7 @@ a {
   width: 450px;
   height: 450px;
   object-fit: cover;
+  object-position: top;
   border-radius: 50%;
   position: relative;
   z-index: 2;
@@ -233,7 +234,9 @@ a {
 }
 
 .more-img {
-  width: 500px;
+  object-position: center;
+  width: 100%;
+  object-fit: cover;
 }
 
 .more-texts-wrapper {
