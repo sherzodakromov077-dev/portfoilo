@@ -16,8 +16,11 @@
   row-gap: 55px;
   transition: 1s;
 }
+.project-item {
+  transition: 0.3s ease;
+}
 .project-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 .project-item {
 }
